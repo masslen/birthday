@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С Днём Рождения, Аслан!</title>
+  <script>
+    const password = "aslan29";
+    const userPassword = prompt("Введите пароль для доступа к сайту:");
+    if (userPassword !== password) {
+      document.write("<h2>Неверный пароль. Доступ запрещён.</h2>");
+      throw new Error("Доступ запрещён");
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(#f9f9f9, #dfefff);
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1542415883-2d5f85b1fdbf') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    audio {
+      margin-top: 20px;
+    }
+    footer {
+      padding: 20px;
+      background-color: #eee;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>С Днём Рождения, Аслан!</h1>
+    <p>Тебе сегодня 29 — праздник души!</p>
+  </header>
+
+  <section>
+    <h2>Поздравление</h2>
+    <p>
+      Брат, поздравляю тебя с 29-летием! Желаю тебе безграничного счастья, здоровья, крепких нервов, больших побед и настоящей любви.
+      Ты — опора, сила и вдохновение. Горжусь тобой каждый день. Пусть каждый год приносит только лучшее!
+    </p>
+  </section>
+
+  <section class="gallery">
+    <h2>Фотогалерея</h2>
+    <img src="https://placekitten.com/300/200" alt="Фото 1">
+    <img src="https://placekitten.com/301/200" alt="Фото 2">
+  </section>
+
+  <section>
+    <h2>Музыка для настроения</h2>
+    <audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-happyrock.mp3" type="audio/mpeg">
+      Ваш браузер не поддерживает аудио.
+    </audio>
+  </section>
+
+  <section>
+    <h2>Видео-поздравление</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    Сделано с любовью для Аслана | Только по паролю: aslan29
+  </footer>
+</body>
+</html>
